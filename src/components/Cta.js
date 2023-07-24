@@ -7,7 +7,7 @@ const Cta = () => {
                 <div className="w-full flex flex-col lg:flex-row lg:justify-around">
                     <div className="mb-4">
                         <p className='text-2xl md:text-4xl font-bold mb-4'>Está gostando do projeto?</p>
-                        <p className="text-lg md:text-2xl">>Entre em contato e deixe-nos construir algo incrível<span className='font-black'>together!</span></p>
+                        <p className="text-lg md:text-2xl">>Entre em contato e deixe-nos construir algo <span className='font-black'>incrível! </span></p>
                     </div>
                     
                     <div className="w-full lg:w-72 pt-6 lg:mx-12">

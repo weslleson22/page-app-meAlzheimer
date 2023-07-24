@@ -4,7 +4,7 @@ import geps from '../images/clients/geticom.png';
 import inova from '../images/clients/inova.png';
 import fapema1 from '../images/clients/logo-FAPEMA-AZUL-1.png';
 import centelha from '../images/clients/Centelha_Estaduais-MA.png';
-import protergia from '../images/clients/logo-SW-1.png';
+import protergia from '../images/logo-SW.png';
 
 const clientImage = {
     height: '10rem',
