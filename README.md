@@ -1,27 +1,35 @@
-# React JS Startup and small business website template
-
-### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Screenshot
-
-![mld edit](https://user-images.githubusercontent.com/43953425/212030864-cf3aa272-e070-4e1b-8e25-f488ca56873e.png)
+# Projete do APP MeAlzheimer
 
 
 
-The Live demo is available [Here](https://mld-prototype.netlify.app)
+# Captura de tela
 
-## Description
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home.png)
 
-This is a ReactJS based startup and small business website template. 
-It was designed using TailwindCSS and React. 
-The Contact form was made functional using EmailJS, to learn how to use EmailJS, you can check out the official documentation [here](https://www.emailjs.com/docs/) or follow this short tutorial [here](https://senuravihanjayadeva.medium.com/send-emails-using-react-through-emailjs-a9d4b21193a7) 
 
-## How to use it
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home1.png)
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home2.png)
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home3.png)
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home4.png)
+![mld edit](https://raw.githubusercontent.com/weslleson22/page-app-meAlzheimer/main/src/images/readme/Home5.png)
 
-To use this template:
-1. Clone the repository to your local machine, 
-2. run `npm install` to install all the required dependencies and
-3. run `npm start` to view the website locally.
-Feel free to edit and make changes. 
 
-You can also Fork the repo and clone to your local machine, make desired changes and enjoy.
+
+
+
+## Descrição
+
+	- "MEAlzheimer: um assistente digital para auxiliar na memória e no dia a dia de quem tem Alzheimer."
+	- "Auxílio para a memória, agenda de tarefas, lembretes de medicação e muito mais. O apoio que você precisa, na palma da sua mão."
+	- "Ferramentas de apoio para os desafios diários do Alzheimer. Memória assistida, organização de tarefas e lembretes de medicamentos com o MEAlzheimer."
+- "Viva melhor com o Alzheimer. Nossa plataforma oferece recursos para ajudar na memória, organizar o dia a dia e não esquecer a medicação."
+
+## Como usá-lo
+
+Para usar este modelo:
+1. Clone o repositório em sua máquina local,
+2. execute `npm install` para instalar todas as dependências necessárias e
+3. execute `npm start` para visualizar o site localmente.
+Sinta-se à vontade para editar e fazer alterações.
+
+Você também pode bifurcar o repositório e clonar em sua máquina local, fazer as alterações desejadas e aproveitar.
