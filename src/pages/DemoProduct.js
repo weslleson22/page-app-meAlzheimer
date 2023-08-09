@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 import axios from 'axios';
 // import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
@@ -114,6 +117,8 @@ const DemoProduct = (props) => {
         <>
             <div>
                 <NavBar />
+
+                
             </div>
             <div className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24">
                 <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
@@ -123,129 +128,26 @@ const DemoProduct = (props) => {
                                 <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">Funções</h1>
                             </div>
                             <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
-                                    value="business_management_system" onChange={handleChange}
-                                 />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Função X</label>
+                             
+                                <Link className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="https://jogo-da-memoria-psi.vercel.app/">
+                                        Gamer da Momoria
+                                </Link>
+                               
                             </div>
                             <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="school_management_portal" onChange={handleChange}
-                                    />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Função X</label>
+                            <Link className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="/get-momory">
+                                    Dicas de Saude 
+                            </Link>
                             </div>
                             <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
-                                    value="payroll_management_system" onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Função X</label>
-                            </div>
+                            <Link className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="/get-momory">
+                                    Lembretes 
+                            </Link>
+                              </div>
                             <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="event_management_system" onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Event Management System</label>
-                            </div>
-                            {errors && 
-                                <p className="text-red-500 text-sm">{errors.products}</p>
-                            }
-
-                        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-                                <div>
-                                    <input 
-                                        name="first_name" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="text" 
-                                        placeholder="Primeiro Nome*" 
-                                        value={firstName}
-                                        onChange={(e)=> setFirstName(e.target.value)}
-                                        onKeyUp={clearErrors}
-                                    />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.first_name}</p>
-                                    }
-                                </div>
-                                
-                                <div>
-                                    <input 
-                                        name="last_name" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="text" 
-                                        placeholder="Sobrenome*"
-                                        value={lastName}
-                                        onChange={(e)=> setLastName(e.target.value)}
-                                        onKeyUp={clearErrors}
-                                    />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.last_name}</p>
-                                    }
-                                </div>
-
-                                <div>
-                                    <input 
-                                        name="email"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="email" 
-                                        placeholder="Email*"
-                                        value={email}
-                                        onChange={(e)=> setEmail(e.target.value)}
-                                        onKeyUp={clearErrors}   
-                                    />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.email}</p>
-                                    }
-                                </div>
-
-                                <div>
-                                    <input
-                                        name="phone_number" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="number" 
-                                        placeholder="Telefone*"
-                                        value={phone}
-                                        onChange={(e)=> setPhone(e.target.value)}
-                                        onKeyUp={clearErrors}
-                                    />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.phone_number}</p>
-                                    }
-                                </div>
-                        </div>
-                        <div className="my-4">
-                            <textarea 
-                                name="message" 
-                                placeholder="Messagem*" 
-                                className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                value={message}
-                                onChange={(e)=> setMessage(e.target.value)}
-                                onKeyUp={clearErrors}
-                            ></textarea>
-                            {errors && 
-                                <p className="text-red-500 text-sm">{errors.message}</p>
-                            }
-                        </div>
-                        <div className="my-2 w-1/2 lg:w-2/4">
-                            <button type="submit" id="submitBtn" className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                                    focus:outline-none focus:shadow-outline">
-                                Enviar Mensagem
-                            </button>
-                        </div>
+                                                    </div>
+                        
+                        
                     </div>
                     </form>
                     <div className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
